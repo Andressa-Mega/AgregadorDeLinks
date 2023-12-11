@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5); 
+  --surface-color:rgba(0, 0, 0, 0.02);
+  --surface-color-hover: rgba(228, 15, 182, 0.377);
+}
+
+.light{
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(228, 15, 182, 0.144);
+}
+
 body {
   /*
   background-image: url(./assets/bg-mobile.jpg);
@@ -11,12 +27,12 @@ body {
   background-position: top center;
   background-size: cover;
   */
-  background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
 }
 
 body * {
   font-family: 'Lato', sans-serif;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 #container {
@@ -47,6 +63,8 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  padding: 24px 0;
 }
 
 ul li a{
@@ -56,8 +74,8 @@ ul li a{
 
   padding: 16px 24px;
 
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
   border-radius: 8px;
 
   backdrop-filter: blur(4px);
@@ -70,6 +88,35 @@ ul li a{
 
 /* pseudo - selector ; Usado para aplicar as coisas quando passamos o mouse*/
 ul li a:hover {
-  background-color: rgba(228, 15, 182, 0.377);
-  border: 1.5px solid white;
+  background-color: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+
+#social-links {
+  display: flex;
+  justify-content: center; /*alinha ao meio*/
+
+  padding: 24px 0;
+  
+  font-size: 24px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+
+  transition: backgroud 0.2s;
+  border-radius: 50%;
+}
+
+#social-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+footer{
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
 }
