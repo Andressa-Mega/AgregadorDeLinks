@@ -22,6 +22,7 @@ body * {
 #container {
   width: 360px; 
   margin: 56px auto 0px;
+  padding: 0 24px;
 }
 
 #profile {
@@ -49,7 +50,6 @@ ul {
 }
 
 ul li a{
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,6 +57,19 @@ ul li a{
   padding: 16px 24px;
 
   background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: ;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.5s;
+}
+
+/* pseudo - selector ; Usado para aplicar as coisas quando passamos o mouse*/
+ul li a:hover {
+  background-color: rgba(228, 15, 182, 0.377);
+  border: 1.5px solid white;
 }
