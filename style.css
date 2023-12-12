@@ -54,12 +54,9 @@ body * {
   margin-top: 8px;
 }
 
-/* switch */
-
 #switch {
   position: relative;
   width: 64px;
-
   margin: 4px auto;
 }
 
@@ -93,15 +90,12 @@ body * {
   border-radius: 9999px;
 }
 
-/* links*/
-
 ul {
   list-style: none;
 
   display: flex;
   flex-direction: column;
   gap: 16px;
-
   padding: 24px 0;
 }
 
@@ -124,7 +118,6 @@ ul li a{
   transition: background 0.5s;
 }
 
-/* pseudo - selector ; Usado para aplicar as coisas quando passamos o mouse*/
 ul li a:hover {
   background-color: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
@@ -132,10 +125,8 @@ ul li a:hover {
 
 #social-links {
   display: flex;
-  justify-content: center; /*alinha ao meio*/
-
+  justify-content: center;
   padding: 24px 0;
-  
   font-size: 24px;
 }
 
@@ -144,7 +135,6 @@ ul li a:hover {
   align-items: center;
   justify-content: center;
   padding: 16px;
-
   transition: backgroud 0.2s;
   border-radius: 50%;
 }
