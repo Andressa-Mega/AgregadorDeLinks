@@ -1,7 +1,7 @@
 <h1 align="center"> Devlinks </h1>
 
 
-<p align="center"> Projeto desenvolvido para apresentação de links pessoais aos recrutadores interessados, e para o estudo de tecnologias</p>
+<p align="center"> Projeto desenvolvido para apresentação de links pessoais aos recrutadores interessados, e para o estudo de tecnologias.</p>
 
 <p align="center">
   <img src="./assets/devlinks.JPG" alt="Devlinks" width="100%">
@@ -11,7 +11,6 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
 <br>
