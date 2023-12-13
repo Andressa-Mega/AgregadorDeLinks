@@ -54,6 +54,12 @@ body * {
   margin-top: 8px;
 }
 
+p#description {
+  text-align: center;
+  size: 16px;
+  white-space: nowrap;
+}
+
 /* switch */
 
 #switch {
